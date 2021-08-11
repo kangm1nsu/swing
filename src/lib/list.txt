@@ -1,0 +1,23 @@
+엑셀 조작을 위한 라이브러리 다운로드
+
+https://poi.apache.org/download.html
+version :  4.1.1
+
+Release Archives
+-> Binary Artifacts
+-> poi-bin-4.1.1-20191023.zip       : 윈도우용  
+->  poi-bin-4.1.1-20191023.tar.gz   : Unix/Linux 용
+
+압축풀기
+라이브러리 등록
+java build path 에 add External library 로 추가 :모든 .lb, .jar
+poi4.1.1 라이브러리와 추가
+  xmlbeans3.0.1 추가필요(중요)
+
+// 엑셀 조작라이브러리
+	// v 를 excel file로 저장
+	// poi-bin-4.1.1-20191023.zip 압축풀어서
+	// 모든(root, \lib 폴더) .JAR 를 복사하여 buildpath -> library path  에 등록 하여 사용한다
+	//  추가 xmlbeans-3.0.1 추가 필수안하면 xml 관련 에러발생
+	// poi-bin-4.1.1-20191023.zip  만 lib 에 추가하면 안됨
+
